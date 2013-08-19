@@ -6,6 +6,7 @@ from django.conf import settings
 
 urlpatterns = patterns('',
     # Examples:
+	url(r'^boiling-spire-5166.herokuapp.com$','Home.views.home', name='homeapp'),
 	url(r'^$', 'Home.views.home', name='home'),
 	url(r'^Templates/(?P<path>.*)$', 'django.views.static.serve',{'document_root': settings.MEDIA_ROOT}),
     # url(r'^HelloWorld/', include('HelloWorld.foo.urls')),
