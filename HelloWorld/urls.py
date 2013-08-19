@@ -6,9 +6,8 @@ from django.conf import settings
 
 urlpatterns = patterns('',
     # Examples:
-    url(r'^$', 'Home.views.home', name='home'),
-	url(r'^Templates/(?P<path>.*)$', 'django.views.static.serve',
-                 {'document_root': settings.MEDIA_ROOT}),
+	url(r'^$', 'Home.views.home', name='home'),
+	url(r'^Templates/(?P<path>.*)$', 'django.views.static.serve',{'document_root': settings.MEDIA_ROOT}),
     # url(r'^HelloWorld/', include('HelloWorld.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
